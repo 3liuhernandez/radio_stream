@@ -1,0 +1,20 @@
+<script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer id="script" onload="remove_mark"></script>
+<div class="elfsight-app-ddfe97cb-43be-463e-9f7d-116b87997f3d"></div>
+
+<script>
+    const remove_mark = () => {
+        const mark = document.querySelectorAll('a[href^="https://elfsight.com/radio-player-widget/"]');
+        console.log('mark', mark)
+        if (mark.length) {
+            mark.forEach(link => {
+                link.remove();
+            });
+        }
+    }
+
+    document.querySelector('#script').onload = () => {
+        setInterval(() => {
+            remove_mark();
+        }, 300);
+    }
+</script>
