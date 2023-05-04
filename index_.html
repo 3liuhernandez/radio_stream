@@ -1,29 +1,95 @@
-<meta property="og:title" content="Escuchanos en vivo y en directo"/>
-<meta property="og:image" content="http://radio.netyco.com/StartPage/media/fb1.png"/>
-<meta property="og:site_name" content="Escucha en vivo y en directo nuestra transmisi�n."/>
-<meta property="og:description" content="Escuchanos. Estamos en vivo en este momento"/>
+<link href="https://reproductores.hostingtico.com/player/css/myCast.min.css" rel="stylesheet" type="text/css">
+<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+<div class="myCast" id="stream1"></div>
+<script src="https://reproductores.hostingtico.com/player/js/myCast.min.js"></script>
+<script>
+    $('#stream1').myCast({
+        // URL: 'https://acp2.lorini.net:28050/stream',
+        URL: 'https://server.radiogs.net:7053',
+        version: 'icecast',
+        mount_point: 'stream',
+        vertical_layout: false,
+        bg: 'grey',
+        accent: 'deeporange',
+        blur: true,
+        autoplay: true,
 
-
-<!-- INICIO, COPIA ESTO EN TU PAGINA WEB -->
-<script type="text/javascript" src="radio.js"></script>
-<div id="radioload">Tu radio en Internet <a alt="Transmite tu radio por internet, setreaming gratis con Netyco, servidores de radio por internet" href="http://www.netyco.com/radio-x-internet/radio.php">Netyco Argentina</a>
-</div>
-<script type="text/javascript">
-var params={
-'style':'circular',
-'title':'espacio',
-'web':'espacio.com',
-'streamURL':'https://acp2.lorini.net:28050/stream',
-'android':'',
-'autoplay':true,
-'bgcolor':'#ff9900',
-'bgimg':'https://2.bp.blogspot.com/-Je7nKOZaK64/WRQZrmCIPPI/AAAAAAAA4Vk/Mnz_dqs_HtYvZtAZAG1519h9ENUtOo92gCLcB/s1600/thecrab.gif',
-'position':'top',
-'txtTituloColor':'#ffffff',
-'txtColor':'#ffffff',
-'txtStatusColor':'#00e900',
-'btnFondoColor':'#ff0000',
-'btnLineaColor':'#000000',
-};Netyco.insert(params);
+    });
 </script>
-<!-- FIN: Fin del codigo de tu reproductor de radio -->
+
+
+<!-- TEMPLATE -->
+
+<!--
+<div class="player-wpr">
+    <div class="bg-wpr">
+        <div class="ppBtn play-btn"></div>
+        <div class="blur"></div>
+        <div class="data-panel animated">
+            <div class="data-panel-row">
+                <div class="data-panel-info">
+                    <span class="listenersTxt"></span>
+                    <span class="qualityTxt"></span>
+                    <span class="genreTxt"></span>
+                </div>
+                <div class="data-panel-r-icon">
+                    <i class="fa fa-bolt" aria-hidden="true"></i>
+                </div>
+            </div>
+            <div class="data-panel-row">
+                <div class="data-panel-info">
+                    <div class="history">
+                        <ul></ul>
+                    </div>
+                </div>
+                <div class="data-panel-r-icon">
+                    <i class="fa fa-history" aria-hidden="true"></i>
+                </div>
+            </div>
+            <div class="data-panel-row">
+                <div class="data-panel-info">
+                    <div class="share">
+                        <ul>
+                            <li class="afacebook">
+                                <i class="fa fa-facebook facebook" aria-hidden="true"></i>
+                                <a target="_blank" href="#">Facebook</a>
+                            </li>
+                            <li class="atwitter">
+                                <i class="fa fa-twitter twitter" aria-hidden="true"></i>
+                                <a target="_blank" href="#">Twitter</a>
+                            </li>
+                            <li class="agoogle">
+                                <i class="fa fa-google google" aria-hidden="true"></i>
+                                <a target="_blank" href="#">Google+</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="data-panel-r-icon">
+                    <i class="fa fa-share-alt" aria-hidden="true"></i>
+                </div>
+            </div>
+        </div>
+        <div class="more fa"></div>
+        <div class="player-ctr">
+            <div class="album-cover-wpr">
+                <div class="album-cover animated"></div>
+            </div>
+            <div class="album-cover-wpr2">
+                <div class="album-cover2 animated"></div>
+            </div>
+            <div class="track-info animated">
+                <div class="track-title animated"></div>
+                <div class="artist-name animated"></div>
+            </div>
+            <div class="controls-wpr animated">
+                <div class="vol-icon fa"></div>
+                <div class="volume-slider-wpr">
+                    <input class="volume-slider" type="range" min="0" max="100" step="0.10" value="" autocomplete="off">
+                    <span class="vol-value"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+-->
