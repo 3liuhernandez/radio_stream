@@ -1,7 +1,7 @@
 /* myCast - Fantastic Shoutcast & Icecast Radio Player  v1.5 [12/18/17] - (c) 2017, Diego Navarro [dgone1988@gmail.com] */
 
 .myCast .player-wpr {
-    width: 532px;
+    width: 450px;
     max-width: 100%;
     height: auto;
     font-family: 'Roboto', Arial, sans-serif;
@@ -14,6 +14,7 @@
     -moz-osx-font-smoothing: grayscale;
     text-rendering: optimizeLegibility;
     margin: 0 auto;
+    border-radius: 10px;
 }
 
 .myCast .bg-wpr {
@@ -114,7 +115,7 @@
 
 .myCast .play-btn {
     color: rgba(0, 0, 0, 1);
-    background: #E16B44 url(../img/playw.svg);
+    background: #E16B44 url(https://espacioteam.com/assets/img/btns/playw.svg);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: 34px 34px;
@@ -125,7 +126,7 @@
 
 .myCast .stop-btn {
     color: rgba(0, 0, 0, 1);
-    background: #E16B44 url(../img/btns/playw.svg);
+    background: #E16B44 url(https://espacioteam.com/assets/img/btns/playw.svg);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: 34px 34px;
@@ -248,7 +249,6 @@
     text-overflow: ellipsis;
     white-space: nowrap;
     z-index: 301;
-    top: 35;
 }
 
 .myCast .data-panel-info span {
@@ -256,7 +256,7 @@
 }
 
 .myCast .data-panel-info i {
-    font-size: 24px;
+    font-size: 16px;
     margin-right: 4px;
 }
 
@@ -307,6 +307,7 @@
     margin: 0;
     display: flex;
     flex-wrap: wrap;
+    flex-direction: column;
     align-items: center;
     justify-content: space-around;
 }
@@ -475,8 +476,8 @@
 
 @media only screen and (max-width:600px) {
     .myCast .player-wpr {
-        max-width: 426px;
-        height: 98px
+        /* max-width: 426px; */
+        /* height: 98px */
     }
 
     .myCast .bg-wpr {
@@ -635,13 +636,11 @@
     }
 
     .myCast .data-panel-row {
-        height: 26px;
         position: relative;
         margin-bottom: 4px
     }
 
     .myCast .data-panel-info {
-        height: 26px;
         font-size: 11px;
         line-height: 28px;
         padding-left: 24px;
@@ -1127,175 +1126,175 @@
 }
 
 .accent-red .play-btn {
-    background: #F44336 url(../img/playw.svg)
+    background: #F44336 url(https://espacioteam.com/assets/img/btns/playw.svg)
 }
 
 .accent-pink .play-btn {
-    background: #E91E63 url(../img/playw.svg)
+    background: #E91E63 url(https://espacioteam.com/assets/img/btns/playw.svg)
 }
 
 .accent-purple .play-btn {
-    background: #9C27B0 url(../img/playw.svg)
+    background: #9C27B0 url(https://espacioteam.com/assets/img/btns/playw.svg)
 }
 
 .accent-deeppurple .play-btn {
-    background: #5E35B1 url(../img/playw.svg)
+    background: #5E35B1 url(https://espacioteam.com/assets/img/btns/playw.svg)
 }
 
 .accent-indigo .play-btn {
-    background: #3F51B5 url(../img/playw.svg)
+    background: #3F51B5 url(https://espacioteam.com/assets/img/btns/playw.svg)
 }
 
 .accent-blue .play-btn {
-    background: #2196F3 url(../img/playw.svg)
+    background: #2196F3 url(https://espacioteam.com/assets/img/btns/playw.svg)
 }
 
 .accent-lightblue .play-btn {
-    background: #03A9F4 url(../img/playb.svg)
+    background: #03A9F4 url(https://espacioteam.com/assets/img/playb.svg)
 }
 
 .accent-cyan .play-btn {
-    background: #00BCD4 url(../img/playb.svg)
+    background: #00BCD4 url(https://espacioteam.com/assets/img/playb.svg)
 }
 
 .accent-teal .play-btn {
-    background: #009688 url(../img/playw.svg)
+    background: #009688 url(https://espacioteam.com/assets/img/btns/playw.svg)
 }
 
 .accent-green .play-btn {
-    background: #4CAF50 url(../img/playb.svg)
+    background: #4CAF50 url(https://espacioteam.com/assets/img/playb.svg)
 }
 
 .accent-lightgreen .play-btn {
-    background: #8BC34A url(../img/playb.svg)
+    background: #8BC34A url(https://espacioteam.com/assets/img/playb.svg)
 }
 
 .accent-lime .play-btn {
-    background: #CDDC39 url(../img/playb.svg)
+    background: #CDDC39 url(https://espacioteam.com/assets/img/playb.svg)
 }
 
 .accent-yellow .play-btn {
-    background: #FFEB3B url(../img/playb.svg)
+    background: #FFEB3B url(https://espacioteam.com/assets/img/playb.svg)
 }
 
 .accent-amber .play-btn {
-    background: #FFC107 url(../img/playb.svg)
+    background: #FFC107 url(https://espacioteam.com/assets/img/playb.svg)
 }
 
 .accent-orange .play-btn {
-    background: #E16B44 url(../img/playb.svg)
+    background: #E16B44 url(https://espacioteam.com/assets/img/playb.svg)
 }
 
 .accent-deeporange .play-btn {
-    background: #E16B44 url(../img/btns/playw.svg)
+    background: #E16B44 url(https://espacioteam.com/assets/img/btns/playw.svg)
 }
 
 .accent-brown .play-btn {
-    background: #795548 url(../img/playw.svg)
+    background: #795548 url(https://espacioteam.com/assets/img/btns/playw.svg)
 }
 
 .accent-grey .play-btn {
-    background: #BDBDBD url(../img/playb.svg)
+    background: #BDBDBD url(https://espacioteam.com/assets/img/playb.svg)
 }
 
 .accent-bluegrey .play-btn {
-    background: #607D8B url(../img/playw.svg)
+    background: #607D8B url(https://espacioteam.com/assets/img/btns/playw.svg)
 }
 
 .accent-darkblue .play-btn {
-    background: #163372 url(../img/playw.svg)
+    background: #163372 url(https://espacioteam.com/assets/img/btns/playw.svg)
 }
 
 .accent-black .play-btn {
-    background: #262626 url(../img/playw.svg)
+    background: #262626 url(https://espacioteam.com/assets/img/btns/playw.svg)
 }
 
 .accent-red .stop-btn {
-    background: #F44336 url(../img/btns/playw.svg)
+    background: #F44336 url(https://espacioteam.com/assets/img/btns/playw.svg)
 }
 
 .accent-pink .stop-btn {
-    background: #E91E63 url(../img/btns/playw.svg)
+    background: #E91E63 url(https://espacioteam.com/assets/img/btns/playw.svg)
 }
 
 .accent-purple .stop-btn {
-    background: #9C27B0 url(../img/btns/playw.svg)
+    background: #9C27B0 url(https://espacioteam.com/assets/img/btns/playw.svg)
 }
 
 .accent-deeppurple .stop-btn {
-    background: #5E35B1 url(../img/btns/playw.svg)
+    background: #5E35B1 url(https://espacioteam.com/assets/img/btns/playw.svg)
 }
 
 .accent-indigo .stop-btn {
-    background: #3F51B5 url(../img/btns/playw.svg)
+    background: #3F51B5 url(https://espacioteam.com/assets/img/btns/playw.svg)
 }
 
 .accent-blue .stop-btn {
-    background: #2196F3 url(../img/btns/playw.svg)
+    background: #2196F3 url(https://espacioteam.com/assets/img/btns/playw.svg)
 }
 
 .accent-lightblue .stop-btn {
-    background: #03A9F4 url(../img/pauseb.svg)
+    background: #03A9F4 url(https://espacioteam.com/assets/img/btns/pauseb.svg)
 }
 
 .accent-cyan .stop-btn {
-    background: #00BCD4 url(../img/pauseb.svg)
+    background: #00BCD4 url(https://espacioteam.com/assets/img/btns/pauseb.svg)
 }
 
 .accent-teal .stop-btn {
-    background: #009688 url(../img/btns/playw.svg)
+    background: #009688 url(https://espacioteam.com/assets/img/btns/playw.svg)
 }
 
 .accent-green .stop-btn {
-    background: #4CAF50 url(../img/pauseb.svg)
+    background: #4CAF50 url(https://espacioteam.com/assets/img/btns/pauseb.svg)
 }
 
 .accent-lightgreen .stop-btn {
-    background: #8BC34A url(../img/pauseb.svg)
+    background: #8BC34A url(https://espacioteam.com/assets/img/btns/pauseb.svg)
 }
 
 .accent-lime .stop-btn {
-    background: #CDDC39 url(../img/pauseb.svg)
+    background: #CDDC39 url(https://espacioteam.com/assets/img/btns/pauseb.svg)
 }
 
 .accent-yellow .stop-btn {
-    background: #FFEB3B url(../img/pauseb.svg)
+    background: #FFEB3B url(https://espacioteam.com/assets/img/btns/pauseb.svg)
 }
 
 .accent-amber .stop-btn {
-    background: #FFC107 url(../img/pauseb.svg)
+    background: #FFC107 url(https://espacioteam.com/assets/img/btns/pauseb.svg)
 }
 
 .accent-orange .stop-btn {
-    background: #E16B44 url(../img/pauseb.svg)
+    background: #E16B44 url(https://espacioteam.com/assets/img/btns/pauseb.svg)
 }
 
 .accent-deeporange .stop-btn {
-    background: #E16B44 url(../img/btns/pause.svg)
+    background: #E16B44 url(https://espacioteam.com/assets/img/btns/pause.svg)
 }
 
 .accent-black .pause {
-    background: #E16B44 url(../img/btns/pause.svg)
+    background: #E16B44 url(https://espacioteam.com/assets/img/btns/pause.svg)
 }
 
 .accent-brown .stop-btn {
-    background: #795548 url(../img/btns/playw.svg)
+    background: #795548 url(https://espacioteam.com/assets/img/btns/playw.svg)
 }
 
 .accent-grey .stop-btn {
-    background: #BDBDBD url(../img/pauseb.svg)
+    background: #BDBDBD url(https://espacioteam.com/assets/img/btns/pauseb.svg)
 }
 
 .accent-bluegrey .stop-btn {
-    background: #607D8B url(../img/btns/playw.svg)
+    background: #607D8B url(https://espacioteam.com/assets/img/btns/playw.svg)
 }
 
 .accent-darkblue .stop-btn {
-    background: #163372 url(../img/btns/playw.svg)
+    background: #163372 url(https://espacioteam.com/assets/img/btns/playw.svg)
 }
 
 .accent-black .stop-btn {
-    background: #262626 url(../img/btns/playw.svg)
+    background: #262626 url(https://espacioteam.com/assets/img/btns/playw.svg)
 }
 
 .accent-red .play-btn:hover,

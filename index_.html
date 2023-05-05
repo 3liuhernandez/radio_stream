@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="asset/css/myCast.min.css">
+<link rel="stylesheet" href="https://espacioteam.com/assets/css/myCast.min.css">
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
     integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
@@ -8,8 +8,14 @@
 
 <style>
     .myCast .album-cover {
-        background-image: url('./asset/img/cover/logo2.jpg');
+        background: transparent url('https://espacioteam.com/assets/img/cover/espacio_team.png');
         background-position: center center;
+    }
+
+    #stream1 {
+        position: fixed;
+        bottom: 5%;
+        right: 3%;
     }
 </style>
 
@@ -18,13 +24,13 @@
 </div>
 
 <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
-<script src="asset/js/myCast.min.js"></script>
+<script src="https://espacioteam.com/assets/js/myCast.min.js"></script>
 
 <script>
     jQuery(() => {
         $('#stream1').myCast({
-            // URL: 'https://https://acp2.lorini.net:28050',
-            URL: 'https://server.radiogs.net:7053',
+            URL: 'https://acp2.lorini.net:28050',
+            // URL: 'https://server.radiogs.net:7053',
             version: '2',
             mount_point: 'stream',
             vertical_layout: false,
@@ -33,7 +39,7 @@
             blur: true,
             autoplay: false,
             lang: "es",
-            logo: "https://espacioteam.com/wp-content/uploads/2023/04/ESPACIO-NETWORK-PERFIL2.png",
+            logo: "https://espacioteam.com/assets/img/cover/espacio_team.png",
         });
 
     });
