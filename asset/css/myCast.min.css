@@ -1,8 +1,8 @@
 /* myCast - Fantastic Shoutcast & Icecast Radio Player  v1.5 [12/18/17] - (c) 2017, Diego Navarro [dgone1988@gmail.com] */
 
 .myCast .player-wpr {
-    width: 450px;
-    max-width: 100%;
+    width: 100%;
+    max-width: 450px;
     height: auto;
     font-family: 'Roboto', Arial, sans-serif;
     font-weight: 400;
@@ -476,9 +476,9 @@
 
 @media only screen and (max-width:600px) {
     .myCast .player-wpr {
-        /* max-width: 426px; */
-        /* height: 98px */
+        max-width: 280px;
     }
+
 
     .myCast .bg-wpr {
         height: 98px

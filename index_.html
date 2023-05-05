@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="https://espacioteam.com/assets/css/myCast.min.css">
+<link rel="stylesheet" href="asset/css/myCast.min.css?v=1">
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
     integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
@@ -10,12 +10,13 @@
     .myCast .album-cover {
         background: transparent url('https://espacioteam.com/assets/img/cover/espacio_team.png');
         background-position: center center;
+        background-size: cover;
     }
 
     #stream1 {
         position: fixed;
         bottom: 5%;
-        right: 3%;
+        right: 1%;
     }
 </style>
 
@@ -23,16 +24,17 @@
 
 </div>
 
-<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
-<script src="https://espacioteam.com/assets/js/myCast.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.4.1.js?v=2"></script>
+<script src="asset/js/myCast.min.js?v=3"></script>
 
 <script>
     jQuery(() => {
         $('#stream1').myCast({
-            URL: 'https://acp2.lorini.net:28050',
+            URL: 'https://acp2.lorini.net:28050/stream',
             // URL: 'https://server.radiogs.net:7053',
             version: '2',
-            mount_point: 'stream',
+            mount_point: '',
+            streampath: '',
             vertical_layout: false,
             bg: 'black',
             accent: 'white',
