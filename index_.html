@@ -1,112 +1,40 @@
 <link rel="stylesheet" href="asset/css/myCast.min.css">
-<!-- <script src="https://kit.fontawesome.com/d9259c423e.js" crossorigin="anonymous"></script> -->
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 <!-- TEMPLATE -->
 
+<style>
+    .myCast .album-cover {
+        background-image: url('http://localhost/demos/radio/asset/img/cover/logo2.jpg');
+        background-position: center center;
+    }
+</style>
+
 <div class="myCast" id="stream1">
-    <div class="player-wpr">
-        <div class="bg-wpr bg-grey accent-deeporange">
-            <div class="ppBtn playing stop-btn"></div>
 
-            <div class="blur" style="
-                background-image: url(asset/img/cover/logo.jpg);
-                background-position: center center;
-                opacity: 0.16;
-                filter: blur(5px);
-                transition: opacity 1s ease-in 1.5s;
-                ">
-            </div>
-
-            <div class="data-panel animated">
-                <div class="data-panel-row">
-                    <div class="data-panel-info">
-                        <span class="listenersTxt"></span>
-                        <span class="qualityTxt"></span>
-                        <span class="genreTxt"></span>
-                    </div>
-                    <div class="data-panel-r-icon">
-                        <i class="fa-solid fa-bolt"></i>
-                    </div>
-                </div>
-                <div class="data-panel-row">
-                    <div class="data-panel-info">
-                        <div class="history">
-                            <ul>AJ</ul>
-                        </div>
-                    </div>
-                    <div class="data-panel-r-icon">
-                        <i class="fa-solid fa-rectangle-history"></i>
-                    </div>
-                </div>
-                <div class="data-panel-row">
-                    <div class="data-panel-info">
-                        <div class="share">
-                            <ul class="socials">
-                                <li class="afacebook">
-                                    <i class="fa-brands fa-facebook facebook"></i>
-                                    <a target="_blank" href="#">Facebook</a>
-                                </li>
-                                <li class="atwitter">
-                                    <i class="fa-brands fa-twitter twitter"></i>
-                                    <a target="_blank" href="#">
-                                        Twitter
-                                    </a>
-                                </li>
-                                <li class="agoogle">
-                                    <i class="fa-brands fa-google-plus google"></i>
-                                    <a target="_blank" href="#">
-                                        Google+
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="data-panel-r-icon">
-                        <i class="fa-sharp fa-solid fa-share-nodes"></i>
-                    </div>
-                </div>
-            </div>
-            <div class="more fa"></div>
-            <div class="player-ctr">
-                <div class="album-cover-wpr">
-                    <div class="album-cover animated"></div>
-                </div>
-                <div class="album-cover-wpr2">
-                    <div class="album-cover2 animated"></div>
-                </div>
-                <div class="track-info animated">
-                    <div class="track-title animated"></div>
-                    <div class="artist-name animated"></div>
-                </div>
-                <div class="controls-wpr animated">
-                    <div class="vol-icon fa vol-icon2"></div>
-                    <div class="volume-slider-wpr"> 
-                        <input class="volume-slider" type="range" min="0" max="100" step="0.10" value="" autocomplete="off">
-                        <span class="vol-value">23%</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
 </div>
 
-
-<!-- <div class="myCast" id="stream1"></div> -->
-
-<!-- <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script> -->
 <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
 <script src="asset/js/myCast.min.js"></script>
 
 <script>
-    $('#stream1').myCast({
-        // URL: 'https://acp2.lorini.net:28050/stream',
-        URL: 'https://server.radiogs.net:7053',
-        version: 'icecast',
-        mount_point: 'stream',
-        vertical_layout: false,
-        bg: 'grey',
-        accent: 'deeporange',
-        blur: true,
-        autoplay: true,
+    jQuery(() => {
+        $('#stream1').myCast({
+            // URL: 'https://https://acp2.lorini.net:28050',
+            URL: 'https://server.radiogs.net:7053',
+            version: '2',
+            mount_point: 'stream',
+            vertical_layout: false,
+            bg: 'black',
+            accent: 'white',
+            blur: true,
+            autoplay: false,
+            lang: "es",
+            logo: "https://espacioteam.com/wp-content/uploads/2023/04/ESPACIO-NETWORK-PERFIL2.png",
+        });
+
     });
 </script>
