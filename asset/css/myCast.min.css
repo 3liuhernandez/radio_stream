@@ -1,12 +1,13 @@
 /* myCast - Fantastic Shoutcast & Icecast Radio Player  v1.5 [12/18/17] - (c) 2017, Diego Navarro [dgone1988@gmail.com] */
 
 .myCast .player-wpr {
-    max-width: 532px;
-    height: 122px;
+    width: 532px;
+    max-width: 100%;
+    height: auto;
     font-family: 'Roboto', Arial, sans-serif;
     font-weight: 400;
     text-align: left;
-    color: rgba(0, 0, 0, .87);
+    /* color: rgba(0, 0, 0, 0.87); */
     position: relative;
     overflow: hidden;
     -webkit-font-smoothing: antialiased;
@@ -234,26 +235,20 @@
 }
 
 .myCast .data-panel-row {
-    height: 32px;
     position: relative;
-    margin-bottom: 5px
 }
 
 .myCast .data-panel-info {
-    height: 32px;
-    background: #fff;
-    font-size: 12px;
-    color: rgba(0, 0, 0, .54);
-    line-height: 32px;
+    font-size: 13px;
     position: relative;
     padding-left: 32px;
     padding-right: 12px;
     margin-left: 12px;
     border-radius: 0 20px 20px 0;
-    overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
-    z-index: 301
+    z-index: 301;
+    top: 35;
 }
 
 .myCast .data-panel-info span {
@@ -261,9 +256,8 @@
 }
 
 .myCast .data-panel-info i {
-    font-size: 14px;
+    font-size: 24px;
     margin-right: 4px;
-    line-height: 10px
 }
 
 .myCast .data-panel-r-icon {
@@ -310,7 +304,11 @@
 
 .myCast .share ul {
     padding: 0;
-    margin: 0
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
 }
 
 .myCast .share ul li {
@@ -320,16 +318,25 @@
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
-    display: inline-block
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
 }
 
 .myCast .share a {
     color: inherit;
-    text-decoration: none
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.myCast .share a:hover {
+    color: #fff;
+    transition: all 100ms ease-out;
 }
 
 .myCast .facebook {
-    color: #3F51B5
+    color: #4685ff;
 }
 
 .myCast .twitter {
@@ -1062,7 +1069,6 @@
 .bg-orange .track-title,
 .bg-grey .track-title,
 .bg-white .track-title {
-    color: rgba(0, 0, 0, .87)
 }
 
 .bg-lightblue .artist-name,
@@ -1118,7 +1124,6 @@
 .bg-orange .vol-value,
 .bg-grey .vol-value,
 .bg-white .vol-value {
-    color: rgba(0, 0, 0, .48)
 }
 
 .accent-red .play-btn {
@@ -2005,7 +2010,7 @@
 .bg-bluegrey .data-panel-info,
 .bg-darkblue .data-panel-info,
 .bg-black .data-panel-info {
-    color: rgba(255, 255, 255, .7)
+    color: rgba(255, 255, 255, .7);
 }
 
 .bg-red .data-panel-r-icon {
@@ -2089,7 +2094,12 @@
 }
 
 .bg-black .data-panel-r-icon {
-    background: #101010
+    background: #101010;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: -10px;
 }
 
 .bg-red .data-panel-r-icon,
