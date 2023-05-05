@@ -1,4 +1,4 @@
-<link href="https://reproductores.hostingtico.com/player/css/myCast.min.css" rel="stylesheet" type="text/css">
+<!-- <link href="https://reproductores.hostingtico.com/player/css/myCast.min.css" rel="stylesheet" type="text/css">
 <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
 <div class="myCast" id="stream1"></div>
 <script src="https://reproductores.hostingtico.com/player/js/myCast.min.js"></script>
@@ -15,81 +15,162 @@
         autoplay: true,
 
     });
-</script>
+</script> -->
 
 
-<!-- TEMPLATE -->
+<!DOCTYPE html>
+<html lang="en">
 
-<!--
-<div class="player-wpr">
-    <div class="bg-wpr">
-        <div class="ppBtn play-btn"></div>
-        <div class="blur"></div>
-        <div class="data-panel animated">
-            <div class="data-panel-row">
-                <div class="data-panel-info">
-                    <span class="listenersTxt"></span>
-                    <span class="qualityTxt"></span>
-                    <span class="genreTxt"></span>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Radio strams</title>
+    <link rel="stylesheet" href="./asset/css/myCast.min.css">
+    <script src="https://kit.fontawesome.com/d9259c423e.js" crossorigin="anonymous"></script>
+    <!-- <style>
+        body {
+            background-color: #222;
+        }
+        .title1 {
+            border-bottom: 1px solid #666;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+        .gresults {
+            background: #F1F8E9;
+            padding: 12px 16px;
+            margin-top: 16px;
+            color: rgba(0,0,0,.7);
+            font-size: 13px;
+            border-radius: 4px;
+        }
+        .gresults-title {
+            margin: 8px 0 12px 0;
+            padding-bottom: 10px;
+            font-size: 14px;
+            color: #000;
+            border-bottom: 1px solid rgba(0,0,0,.54);
+        }
+        .myCast input[type=range] {
+            margin-top: 8px;
+            border: 0;
+        }
+        .myCast .artist-name {
+            margin-top: -5px;
+        }
+        .myCast .track-title {
+            margin-top: -3px;
+        }
+    </style> -->
+</head>
+
+<body>
+
+    <div class="myCast" id="stream1">
+        <div class="player-wpr">
+            <div class="bg-wpr bg-grey accent-deeporange">
+                <div class="ppBtn playing stop-btn"></div>
+
+                <div class="blur" style="  
+                    background-image: url(asset/img/cover/logo.jpg);
+                    background-position: center center;
+                    opacity: 0.16;
+                    filter: blur(5px);
+                    transition: opacity 1s ease-in 1.5s;
+                    ">
                 </div>
-                <div class="data-panel-r-icon">
-                    <i class="fa fa-bolt" aria-hidden="true"></i>
-                </div>
-            </div>
-            <div class="data-panel-row">
-                <div class="data-panel-info">
-                    <div class="history">
-                        <ul></ul>
+
+                <div class="data-panel animated">
+                    <div class="data-panel-row">
+                        <div class="data-panel-info">
+                            <span class="listenersTxt"></span>
+                            <span class="qualityTxt"></span>
+                            <span class="genreTxt"></span>
+                        </div>
+                        <div class="data-panel-r-icon">
+                            <i class="fa-solid fa-bolt"></i>
+                        </div>
+                    </div>
+                    <div class="data-panel-row">
+                        <div class="data-panel-info">
+                            <div class="history">
+                                <ul>AJ</ul>
+                            </div>
+                        </div>
+                        <div class="data-panel-r-icon">
+                            <i class="fa-solid fa-rectangle-history"></i>
+                        </div>
+                    </div>
+                    <div class="data-panel-row">
+                        <div class="data-panel-info">
+                            <div class="share">
+                                <ul class="socials">
+                                    <li class="afacebook">
+                                        <i class="fa-brands fa-facebook facebook"></i>
+                                        <a target="_blank" href="#">Facebook</a>
+                                    </li>
+                                    <li class="atwitter">
+                                        <i class="fa-brands fa-twitter twitter"></i>
+                                        <a target="_blank" href="#">
+                                            Twitter
+                                        </a>
+                                    </li>
+                                    <li class="agoogle">
+                                        <i class="fa-brands fa-google-plus google"></i>
+                                        <a target="_blank" href="#">
+                                            Google+
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="data-panel-r-icon">
+                            <i class="fa-sharp fa-solid fa-share-nodes"></i>
+                        </div>
                     </div>
                 </div>
-                <div class="data-panel-r-icon">
-                    <i class="fa fa-history" aria-hidden="true"></i>
-                </div>
-            </div>
-            <div class="data-panel-row">
-                <div class="data-panel-info">
-                    <div class="share">
-                        <ul>
-                            <li class="afacebook">
-                                <i class="fa fa-facebook facebook" aria-hidden="true"></i>
-                                <a target="_blank" href="#">Facebook</a>
-                            </li>
-                            <li class="atwitter">
-                                <i class="fa fa-twitter twitter" aria-hidden="true"></i>
-                                <a target="_blank" href="#">Twitter</a>
-                            </li>
-                            <li class="agoogle">
-                                <i class="fa fa-google google" aria-hidden="true"></i>
-                                <a target="_blank" href="#">Google+</a>
-                            </li>
-                        </ul>
+                <div class="more fa"></div>
+                <div class="player-ctr">
+                    <div class="album-cover-wpr">
+                        <div class="album-cover animated"></div>
                     </div>
-                </div>
-                <div class="data-panel-r-icon">
-                    <i class="fa fa-share-alt" aria-hidden="true"></i>
-                </div>
-            </div>
-        </div>
-        <div class="more fa"></div>
-        <div class="player-ctr">
-            <div class="album-cover-wpr">
-                <div class="album-cover animated"></div>
-            </div>
-            <div class="album-cover-wpr2">
-                <div class="album-cover2 animated"></div>
-            </div>
-            <div class="track-info animated">
-                <div class="track-title animated"></div>
-                <div class="artist-name animated"></div>
-            </div>
-            <div class="controls-wpr animated">
-                <div class="vol-icon fa"></div>
-                <div class="volume-slider-wpr">
-                    <input class="volume-slider" type="range" min="0" max="100" step="0.10" value="" autocomplete="off">
-                    <span class="vol-value"></span>
+                    <div class="album-cover-wpr2">
+                        <div class="album-cover2 animated"></div>
+                    </div>
+                    <div class="track-info animated">
+                        <div class="track-title animated"></div>
+                        <div class="artist-name animated"></div>
+                    </div>
+                    <div class="controls-wpr animated">
+                        <div class="vol-icon fa vol-icon2"></div>
+                        <div class="volume-slider-wpr"> 
+                            <input class="volume-slider" type="range" min="0" max="100" step="0.10" value="" autocomplete="off">
+                            <span class="vol-value">23%</span>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
--->
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+    <script src="./asset/js/myCast.min.js"></script>
+
+    <script>
+    $('#stream1').myCast({
+        // URL: 'https://acp2.lorini.net:28050/stream',
+        URL: 'https://server.radiogs.net:7053',
+        version: 'icecast',
+        mount_point: 'stream',
+        vertical_layout: false,
+        bg: 'grey',
+        accent: 'deeporange',
+        blur: true,
+        autoplay: true,
+        });
+    </script>
+
+</body>
+
+</html>
